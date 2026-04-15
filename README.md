@@ -57,14 +57,14 @@ cd ../hiii/new
 npm install
 npm run dev
 
-🔑 Features
-Student result entry and management
+ Features
+.Student result entry and management
 
-Secure authentication (JWT)
+.Secure authentication (JWT)
 
-Bulk upload for students and subjects
+.Bulk upload for students and subjects
 
-RESTful APIs for backend
+.RESTful APIs for backend
 
-Responsive frontend UI
+.Responsive frontend UI
 

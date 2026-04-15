@@ -1,0 +1,77 @@
+.access-page {
+  min-height: 100vh;
+  background: #f0f6ff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Header */
+.access-header {
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  color: #fff;
+  padding: 16px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.access-header h1 { margin: 0; font-size: 22px; }
+
+/* Buttons */
+.btn-primary, .btn-secondary, .btn-danger {
+  border: none; border-radius: 6px; cursor: pointer;
+  font-weight: 500; padding: 8px 14px;
+}
+.btn-primary { background: #0d9488; color: #fff; }
+.btn-primary:hover { background: #0f766e; }
+.btn-secondary { background: #eef2ff; color: #3730a3; }
+.btn-secondary:hover { background: #e0e7ff; }
+.btn-danger { background: #fee2e2; color: #b91c1c; }
+.btn-danger:hover { background: #fca5a5; }
+.small { padding: 6px 10px; font-size: 13px; }
+
+/* Summary Cards */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card.hoverable:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+.card h2 { font-size: 16px; margin-bottom: 8px; color: #374151; }
+.card .big { font-size: 28px; font-weight: 700; margin: 6px 0; }
+.card span { color: #6b7280; font-size: 13px; }
+.card.alert { background: #fee2e2; color: #b91c1c; }
+
+/* Table */
+.access-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+.access-table th {
+  text-align: left;
+  padding: 10px;
+  background: #f9fafb;
+  color: #374151;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e7eb;
+}
+.access-table td {
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #4b5563;
+}
+.access-table tr:hover { background: #f3f4f6; }

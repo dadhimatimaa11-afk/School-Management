@@ -1,0 +1,163 @@
+.att-page {
+  min-height: 100vh;
+  background: #f0f6ff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Header */
+.att-header {
+  background: #4f46e5;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: flex; align-items: center; gap: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.att-header .icon { font-size: 22px; }
+.att-header h1 { font-size: 20px; margin: 0; }
+
+/* Cards */
+.att-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+.att-card h2 {
+  font-size: 16px; font-weight: 600; color: #374151;
+  margin-bottom: 12px; border-bottom: 1px solid #e5e7eb; padding-bottom: 6px;
+}
+
+/* Controls */
+.att-controls .row { display: flex; gap: 12px; flex-wrap: wrap; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field.grow { flex: 1; }
+.field input, .field select {
+  border: 1px solid #d1d5db; border-radius: 6px; padding: 10px 12px; font-size: 14px;
+}
+.actions { margin-top: 12px; display: flex; gap: 10px; }
+
+/* Buttons */
+.btn-primary, .btn-secondary {
+  border: none; border-radius: 6px; cursor: pointer; font-weight: 500;
+  padding: 10px 16px;
+}
+.btn-primary { background: #0d9488; color: #fff; }
+.btn-primary:hover { background: #0f766e; }
+.btn-secondary { background: #eef2ff; color: #3730a3; }
+.btn-secondary:hover { background: #e0e7ff; }
+
+/* Table */
+.att-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+.att-table th {
+  text-align: left; padding: 10px; background: #f9fafb; color: #374151;
+  font-weight: 600; border-bottom: 1px solid #e5e7eb;
+}
+.att-table td { padding: 10px; border-bottom: 1px solid #e5e7eb; color: #4b5563; }
+.att-table .empty { text-align: center; color: #6b7280; padding: 20px; }
+
+/* Row controls */
+.status-group { display: flex; gap: 12px; align-items: center; }
+.note-input {
+  width: 100%; border: 1px solid #d1d5db; border-radius: 6px; padding: 8px 10px; font-size: 14px;
+}
+
+/* Biometric */
+.bio-status .pill {
+  display: inline-block; padding: 6px 10px; border-radius: 999px; font-size: 12px; font-weight: 600;
+}
+.bio-status .pill.ok { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
+.bio-status .pill.fail { background: #fee2e2; color: #b91c1c; border: 1px solid #fca5a5; }
+.muted { color: #6b7280; font-size: 13px; margin-top: 6px; }
+.hint { color: #4b5563; font-size: 13px; margin-top: 8px; }
+
+/* Alerts */
+.alert-wrap .chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+.chip { background: #fff7ed; color: #9a3412; border: 1px solid #fed7aa; padding: 6px 10px; border-radius: 999px; font-size: 12px; }
+
+/* Layout helpers */
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+
+
+/* Form group stacked fields */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* Modal overlay background */
+.modal-overlay {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  z-index: 999; /* ensure it appears above everything */
+}
+
+/* Modal box */
+.modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Modal title */
+.modal h2 {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Modal actions (buttons) */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #28a745; /* green */
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #218838;
+}
+
+.btn-danger {
+  background: #dc3545; /* red */
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background: #c82333;
+}
+
+

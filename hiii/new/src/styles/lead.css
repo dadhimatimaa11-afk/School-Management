@@ -1,0 +1,85 @@
+.lead-performance-page {
+  min-height: 100vh;
+  background: #f0f6ff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Header */
+.lead-header {
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  color: #fff;
+  padding: 16px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.lead-header h1 { margin: 0; font-size: 22px; }
+
+/* Buttons */
+.btn-primary {
+  border: none; border-radius: 6px; cursor: pointer;
+  font-weight: 500; padding: 8px 14px;
+  background: #0d9488; color: #fff;
+}
+.btn-primary:hover { background: #0f766e; }
+
+/* Summary Cards */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card.hoverable:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+.card h2 { font-size: 16px; margin-bottom: 8px; color: #374151; }
+.card .big { font-size: 28px; font-weight: 700; margin: 6px 0; }
+.card span { color: #6b7280; font-size: 13px; }
+.card.alert { background: #fee2e2; color: #b91c1c; }
+
+/* Table */
+.lead-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+.lead-table th {
+  text-align: left;
+  padding: 10px;
+  background: #f9fafb;
+  color: #374151;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e7eb;
+}
+.lead-table td {
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #4b5563;
+}
+.lead-table tr:hover { background: #f3f4f6; }
+
+/* Pills for status */
+.pill {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.pill.converted { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
+.pill.contacted { background: #e0f2fe; color: #0369a1; border: 1px solid #7dd3fc; }
+.pill.lost { background: #fee2e2; color: #b91c1c; border: 1px solid #fca5a5; }
+.pill.new { background: #fef9c3; color: #92400e; border: 1px solid #fde68a; }
